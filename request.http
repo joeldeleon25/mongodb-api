@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : " Bayek  ",
+    "dob" : "85 ac",
+    "email" : "assasinscreed@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/6168ddd0177a20b9e505e2ac HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/6168c7c73dfe7c6431dcf17e HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Ezio Florecia ",
+    "dob" : "75",
+    "email" : "ezio@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/6168dd8191e894f64250f8be HTTP/1.1
